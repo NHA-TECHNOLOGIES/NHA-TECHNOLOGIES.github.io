@@ -425,7 +425,7 @@ padding-top: 15%;
 }
 #projects .projects-header h1{
     margin-bottom: 50px;
-    font-size: 35px;
+    font-size: 25px;
     width: 100vw;
 }
 #projects .all-projects {
@@ -457,8 +457,8 @@ padding-top: 15%;
     box-sizing: content-box;
 }
 #projects .project-info h1{
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 23px;
+    font-weight: 400;
     color: cornsilk;
 }
 #projects .project-info h2{
@@ -469,7 +469,7 @@ padding-top: 15%;
 }
 #projects .project-info p{
     color: cornsilk;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
     line-height: 25px;
 }

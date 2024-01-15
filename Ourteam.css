@@ -41,3 +41,167 @@
   .service-item .service-icon a.circle {
     color: wheat;
   } /* IE fix: removes blue border */	
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Quicksand', sans-serif;
+    overflow-y: visible;
+}
+
+:root{
+    --color: rgb(135, 165, 189);
+}
+section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 1500px;
+}
+.grid{
+    margin: 25px 0px;
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.head h1{
+    padding-top: 180px;
+    font-size: 40px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+.left img{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.right > *{
+    margin-bottom: 1.1rem;
+}
+.right h4{
+    font-size: 30rem;
+    font-weight: 500;
+    background: var(--color);
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.right h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.right p{
+    letter-spacing: .05rem;
+    line-height: 25px;
+    display: inline;
+    font-size: 20px;
+    text-align: justify;
+}
+.right a{
+    margin-top: 20px;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.btn::after{
+    content: "";
+    background: var(--color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: width .5s ease;
+}
+.btn:hover::after{
+    width: 100%;
+}
+.mobi-skills{
+    justify-content: center !important;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skills h1{
+    font-size: 20px;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700 ;
+    color:black;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+.skill-bar{
+    height: 14px;
+    background:#282828 ;
+    border-radius:3px ;
+}
+.skill-per{
+    height: 14px;
+    background: blue;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 3s 5;
+    animation-iteration-count: infinite;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute ;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position:absolute ;
+    width:10px ;
+    height: 10px;
+    background: #f1f1f1;
+    top:-20px ;
+    right:0 ;
+    transform: translateX(50%) rotate(45deg);
+    border-radius:2px ;
+}
+@keyframes fillBars{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}

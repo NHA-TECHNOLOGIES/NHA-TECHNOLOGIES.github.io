@@ -402,6 +402,18 @@ padding-top: 15%;
     text-transform: uppercase;
     text-align: center;
 }
+
+
+.service-bottom-text {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    display: inline;
+    text-align: center;
+    align-items: center;
+}
 /* service section */
 /* projects section */
 #projects .projects {
@@ -436,7 +448,7 @@ padding-top: 15%;
 #projects .project-info {
     padding: 30px;
     flex-basis: 50%;
-    background-image: linear-gradient( 60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient( 60deg, #b4b4bd 0%, #485563 100%);
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -494,12 +506,23 @@ padding-top: 15%;
      font-size: 30px;
      width: 100vw;
  }
+
+
  .project-list a{
-     padding: 10px 80px;
+    color: white;
+    width: 15vw;
+  height: 5vw;
+    font-size: 21px;
+    font-weight: 200;
+     padding: 10px 0px;
      margin: 10px 20px;
      border-radius: 20px;
-     background-color: rgb(220, 216, 216);
+     background-color: #b4b4bd;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
  }
+
  bot {
      padding-top: 20px;
  }

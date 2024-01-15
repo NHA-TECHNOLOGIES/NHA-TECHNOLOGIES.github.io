@@ -1,0 +1,104 @@
+body{
+    overflow-x: hidden;
+}
+#contpage{
+    height: 100%;
+}
+#contact {
+    height: 100%;
+}
+#contact h1{
+    font-size: 45px;
+    margin-top: 150px;
+    color: black;
+    justify-content: center;
+    text-align: center; 
+}
+.contpos{
+    margin: 90px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content1{
+   width: 45%;
+    margin: 20px 20px;
+    justify-content: center;
+    text-align: center;
+}
+.contact-tool{
+    margin: 30px 5px;
+    padding: 20px 0px;
+    background-color: rgb(220, 216, 216);
+    border-radius: 20px;
+    box-sizing: content-box;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    margin-left: 25%;
+}
+.contact-tool p{
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.contact-tool h2{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+.contact-tool img{
+    justify-content: center;
+    text-align: center;
+}
+.contacts-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(220, 216, 216);
+    width: 30%;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 20px;
+    border-radius: 20px;
+    box-sizing: content-box;
+    width: 80%;
+   padding: 0px 25px;
+}
+.contact-form span{
+    font-size: 30px;
+}
+.contact-form input{
+    margin: 18px 20px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.contact-form textarea{
+    margin: 18px 20px;
+    height: 200px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.contact-form .submit{
+    border-radius: 20px;
+    border: 2px solid dodgerblue;
+    color:  dodgerblue;
+    width: 50%;
+}
+.form .contact-form input[type=submit]:hover{
+    background-color: dodgerblue;
+      color: black;
+  }
+.icon img{
+    height: 10%;
+    width: 10%;
+}
+#footer{
+    vertical-align: bottom;
+}

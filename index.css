@@ -38,12 +38,15 @@ p{
 
 
 .Logos{
-    display: flex;
-    flex-direction: row;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+text-transform: uppercase;
+cursor: pointer;
+text-align: left;
 }
+
+
+
 .nav-menu{
 	display: flex;
 	justify-content: space-between;
@@ -53,7 +56,8 @@ p{
     width: 100vw;
 	top: 20px;
 	z-index: 1;
-    padding-right: 30px;
+    padding-left: 0
+    ;
  
 }
 .nav-area{
@@ -96,39 +100,45 @@ hr {
 .Logos img{
     height: 40px; width: 40px; padding-top: 5px; margin-left: 20px;
 }
-  Active/Current 
+  
 
   
 /*endnavbar*/
 
+
 /* Hero Section */
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+.landing{
+ margin-top: 0;
+ display: flex;
+ flex-direction: row;
+padding-left: 15%;
+padding-top: 15%;
+   
 }
- .cta{
+
+.cta{
+    justify-content: center;
+    align-items: center;
     display: inline-block;
-    padding: 5px 15px;
-    color: rgb(205, 184, 92);
+    padding: 5px 150px;
+    color:white;
     background-color: transparent;
     border: 2px solid rgb(163, 199, 241);
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: -100px;
     transition: .3s ease backgroung-color ;
     transition-property: backgroung-color, color;
     border-radius: 20px;
   
    
 }
+
+
 .cta:hover {
-    color: rgb(243, 247, 58);
-    background-color: gray;
+    color: blue;
+    background-color: rgba(255, 255, 255, 0.7200000286);
     box-shadow: 0 0 40px;
    
 }
@@ -152,6 +162,7 @@ hr {
     padding-top: 25%;
     padding-bottom: 7%;
     padding-right: 4%;
+    flex-direction: row;
 }
 #hero::after{
     content: '';
@@ -164,8 +175,48 @@ hr {
     opacity: .7; 
     z-index: -1;
 }
-#hero .hero h1{
-    display: block;
+
+.Landing-text .Welcome{
+    font-size: 40px;
+    color: white;
+    padding-bottom: 1%;
+}
+
+.Landing-text .company{
+    padding-bottom: 1%;
+    font-size: 70px;
+    color: white;
+}
+
+
+.Landing-text .company span{
+    padding-bottom: 1%;
+    font-size: 70px;
+    color: white;
+}
+
+.Landing-text .text1{
+    font-weight: 20;
+    font-size: 35px;
+    color: white;
+}
+
+
+.Landing-text .text2{
+    padding-bottom: 0.5%;
+    font-weight: 20;
+    font-size: 35px;
+    color: white;
+}
+
+
+.Landing-text .text3{
+    font-weight: 10;
+    font-size: 30px;
+    color: white;
+}
+#hero .landing .hero h1{
+  text-align: start;
     width: 100%;
     font-size: 4rem;
     position: relative;
@@ -184,16 +235,19 @@ hr {
     animation: text_reveal_surname .5s ease forwards m;
     animation-delay: 3s;  
 }
+
 #hero h1 span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    background-color: crimson;
-    animation: text_reveal_box 1s ease ;
-    animation-delay: .3s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 1s ease ;
+  animation-delay: .3s;
 }
+
 #hero h1:nth-child(1) span{
    animation-delay: .5s; 
 }
@@ -295,6 +349,8 @@ hr {
     font-weight: 300;
     letter-spacing: .05rem;
     display: inline;
+    text-align: center;
+    align-items: center;
 }
 #services.service-bottom{
     display: flex;
@@ -311,7 +367,7 @@ hr {
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: linear-gradient( 60deg, #29323c 0%, #dde4ec 100%);
+   background-color: #b4b4bd;
     background-size: cover;
     margin: 10px 5%;
     color: blanchedalmond;
@@ -319,6 +375,13 @@ hr {
     z-index: 0;
     overflow: hidden;
     margin-top: 50px;
+}
+
+
+#services .service-item p{
+  
+  text-align: center;
+  align-items: center;
 }
 #services .service-item::after{
     content:'';
@@ -337,6 +400,7 @@ hr {
     font-size: 2rem;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 /* service section */
 /* projects section */
@@ -618,7 +682,7 @@ hr {
 /*footer*/
 #footer{
     overflow-x: hidden;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #29323c 0%, #1A1D6F 100%);
     width: 100%;
 }
 #footer .footer{
@@ -771,8 +835,13 @@ hr {
     .Logos img{
         margin-left:10px;
     }
-    .hero-button{
-        padding-top: 10%;
+  .landing-collar {
+   
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+     
     }
     .progress-container{
         display: none;
@@ -1008,8 +1077,8 @@ width: 40px !important;
     .Logos img{
         margin-left:10px;
     }
-    .hero-button{
-        padding-top: 10%;
+   .landing-collar .hero-button{
+        padding-top: 100%;
     }
     .progress-container{
         display: none;

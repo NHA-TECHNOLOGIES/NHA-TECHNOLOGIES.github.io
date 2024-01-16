@@ -56,8 +56,7 @@ text-align: left;
     width: 100vw;
 	top: 20px;
 	z-index: 1;
-    padding-left: 0
-    ;
+   
  
 }
 .nav-area{
@@ -109,11 +108,11 @@ hr {
 /* Hero Section */
 
 .landing{
- margin-top: 0;
+ 
  display: flex;
  flex-direction: row;
 padding-left: 15%;
-padding-top: 15%;
+padding-top: 13%;
    
 }
 
@@ -155,6 +154,8 @@ padding-top: 15%;
     position: relative;
     z-index: 1;
     height: 100%;  
+    display: flex;
+   
 }
 #hero .hero {
     justify-content: right;
@@ -175,6 +176,15 @@ padding-top: 15%;
     opacity: .7; 
     z-index: -1;
 }
+
+.hero-buttons{
+    display: flex; flex-direction: row; justify-content: center; text-align: center;
+    flex-wrap: wrap;
+padding-top: 70px;
+}
+
+
+
 
 .Landing-text .Welcome{
     font-size: 40px;
@@ -225,6 +235,17 @@ padding-top: 15%;
     animation-delay: 1s;
     
 }
+
+.landing-collar{
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+    
+}
+
+
+
 #hero h1:nth-child(1){
     animation-delay: 1s;  
 }
@@ -331,25 +352,44 @@ padding-top: 15%;
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    max-width: 1500px;
+    
     margin: 0 auto;
-    padding: 100px 10px;
+   padding-top: 100px;
 
 }
 #services .service-top{
+  display: flex;
+  flex-direction: column; 
+    padding-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+#services .service-top h1{
+    font-size: 30px;
+    font-weight: 200;
     text-align: center;
     justify-content: center; 
-    padding-bottom: 50px;
+  
+}
+
+#services .service-top img{
+    height: 300px;
+    width: auto;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+  
 }
 
 #services .service-top p{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: .05rem;
     display: inline;
-    text-align: center;
+    text-align: start;
     align-items: center;
 }
 #services.service-bottom{
@@ -380,7 +420,7 @@ padding-top: 15%;
 
 #services .service-item p{
   
-  text-align: center;
+  text-align: start;
   align-items: center;
 }
 #services .service-item::after{
@@ -542,7 +582,7 @@ padding-top: 15%;
     justify-content: center;
     max-width: 1400px;
     padding-left: 0px;
-    padding: 100px 20px;
+    padding: 4.5vw 20px;
     background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1100,9 +1140,7 @@ width: 40px !important;
     .Logos img{
         margin-left:10px;
     }
-   .landing-collar .hero-button{
-        padding-top: 100%;
-    }
+
     .progress-container{
         display: none;
     }

@@ -441,6 +441,7 @@ padding-top: 70px;
     margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;
+    color: white;
 }
 
 
@@ -1461,6 +1462,27 @@ font-size: 20px;
     align-items: center;
     text-align: end;
     
+}
+
+
+.cta-button1 {
+    width: 100vw;
+    padding-bottom: 5%;
+}
+
+
+.cta-button1  .cta {
+    padding: 5px 10px;
+    width: 100vw;
+    font-size: 13px;
+}
+
+
+.cta-button2  .cta {
+  
+    padding: 5px 10px;
+    width: 100vw;
+    font-size: 13px;
 }
 
     .grid .right p{

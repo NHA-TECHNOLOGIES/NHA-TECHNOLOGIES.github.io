@@ -37,12 +37,9 @@ p{
 
 
 
-.Logos{
-  display: flex;
-  flex-direction: row;
-text-transform: uppercase;
-cursor: pointer;
-text-align: left;
+.nav-menu .Logos img{
+
+width: auto;  height:40px;
 }
 
 
@@ -1329,10 +1326,31 @@ width: 40px !important;
     .nav-area li {
         display: none;
     }
+
+
+
+.nav-menu .Logos img{
+
+    width: auto;  height:30px;
+    }
  
     .hamborger{
-       margin-right: -40% ;
+       margin-right: -85% ;
     }
+
+
+
+    .dropbtn img{
+
+
+        height: auto; width: 70px; margin-top: -0.40em; float: right;
+        text-align: left; justify-content: center;
+        align-items: center;
+
+      
+    }
+
+
     .slider {
         padding-left: 10px;
         font-size: 2px;
@@ -1473,7 +1491,7 @@ font-size: 20px;
 
 .cta-button1  .cta {
     padding: 5px 10px;
-    width: 100vw;
+    width: 80vw;
     font-size: 13px;
 }
 
@@ -1481,7 +1499,7 @@ font-size: 20px;
 .cta-button2  .cta {
   
     padding: 5px 10px;
-    width: 100vw;
+    width: 80vw;
     font-size: 13px;
 }
 
@@ -1660,9 +1678,7 @@ font-size: 20px;
         text-align: center;
         padding-bottom: 10px;
     }
-    #services{
-        margin-top: -60%;
-    }
+
     .service-top h1{
         font-size:30px !important ;
     }

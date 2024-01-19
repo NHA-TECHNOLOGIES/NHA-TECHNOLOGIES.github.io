@@ -1328,9 +1328,7 @@ width: 40px !important;
     .nav-area li {
         display: none;
     }
-    .hamborger{
-        margin-right: -30%;
-    }
+ 
     .hamborger{
        margin-right: -40% ;
     }
@@ -1349,6 +1347,7 @@ width: 40px !important;
         font-size: 18px;
     }
     #hero {
+        width: 100vw;
         height: 100vh; 
     }
     #hero .hero{
@@ -1380,9 +1379,90 @@ width: 40px !important;
         font-size: 30px !important;
         margin-top: -50px !important;
     }
-    .grid .left{
     
-    }
+.landing-page-image{
+    display: none;
+}
+
+    .landing{
+   
+        display: flex;
+        flex-direction: row;
+       padding-left: 0.1%;
+       padding-top: 13%;
+          
+       }
+
+
+.hero-buttons{
+    display: flex; flex-direction: row; justify-content: center; text-align: center;
+    flex-wrap: wrap;
+padding-top: 70px;
+}
+
+.hero-buttons a{
+    font-weight: 100;
+font-size: 20px;
+}
+
+
+.Landing-text .Welcome{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 1%;
+}
+
+.Landing-text .company{
+    padding-bottom: 1%;
+    font-size: 35px;
+    color: white;
+}
+
+.Landing-text .company .H{
+   
+    font-size: 35px;
+   
+}
+
+.Landing-text .text1{
+    font-weight: 20;
+    font-size: 25px;
+    color: white;
+}
+
+
+.Landing-text .text2{
+    padding-bottom: 0.5%;
+    font-weight: 20;
+    font-size: 25px;
+    color: white;
+}
+
+
+.Landing-text .text3{
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+#hero .landing .hero h1{
+  text-align: start;
+    width: 100%;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal  .5s ease forwards;
+    animation-delay: 1s;
+    
+}
+
+.landing-collar{
+
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+    
+}
+
     .grid .right p{
         font-size: 17.5px;
         line-height: 21px;
@@ -1516,7 +1596,8 @@ width: 40px !important;
         font-size: 2px;
     }
     #hero {
-        height: 100vh; 
+        height: 100vh;
+        width: 100vw; 
     }
     #hero .hero{
         padding-top:100%;

@@ -351,7 +351,7 @@ padding-top: 70px;
     justify-content: center;
     
     margin: 0 auto;
-   padding-top: 100px;
+ 
 
 }
 #services .service-top{
@@ -466,6 +466,20 @@ padding-top: 70px;
     font-size: 25px;
     width: 100vw;
 }
+
+#projects .projects-header p{
+    width: 100vw;
+    padding: 5px 7%;
+    font-size: 1.7rem;
+   padding-bottom: 30px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
 #projects .all-projects {
     display: flex;
     align-items: center;
@@ -533,17 +547,15 @@ padding-top: 70px;
 #projects .project-image img {
     transition: .3s ease transform;
 }
- .projects .index{
-     margin-top: -150px;
- }
- .project-list{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     text-align: center;
-     font-size: 30px;
-     width: 100vw;
- }
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    width: 100vw;
+}
 
 
  .project-list a{
@@ -926,9 +938,7 @@ padding-top: 70px;
         font-size: 18px;
         line-height: 21px;
     }
-    #services{
-        margin-top: -60%;
-    }
+
     .service-top p{
         font-size:15px  !important;
         line-height: 20px !important;
@@ -1566,6 +1576,33 @@ font-size: 20px;
     .contacts-form textarea{
         font-size: 18px;
     }
+
+
+    .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        width: 100vh;
+    }
+    
+
+    .project-list a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 30px;
+        width: 80vh;
+        height: auto;
+        font-size: 20px;
+    }
+    
+
+
+
     #footer .positioning{
         display: flex;
         flex-direction: column;
@@ -1679,24 +1716,115 @@ font-size: 20px;
         padding-bottom: 10px;
     }
 
-    .service-top h1{
-        font-size:30px !important ;
-    }
-    .service-item{
-       box-sizing: content-box;
-    }
-    .service-item h2{
-        font-size: 50px;
-    }
-    .service-bottom{
-        margin-top: -10%;
-    }
-    #services .service-item{
-        margin-top: 0%;
-      }
-      .service-item p{
-        font-size: 17px !important;
-    }
+/* service section */
+#services .service{
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    
+    margin: 0 auto;
+   padding-top: 100px;
+
+}
+#services .service-top{
+  display: flex;
+  flex-direction: column; 
+    padding-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+#services .service-top h1{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center; 
+  
+}
+
+#services .service-top img{
+    height: 300px;
+    width: auto;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+  
+}
+
+#services .service-top p{
+    font-size: 1.7rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    display: inline;
+    text-align: start;
+    align-items: center;
+}
+#services.service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#services .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+   background-color: #b4b4bd;
+    background-size: cover;
+    margin: 10px 5%;
+    color: blanchedalmond;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+
+#services .service-item p{
+  
+  text-align: start;
+  align-items: center;
+}
+#services .service-item::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#services .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#services .service-item h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+
+.service-bottom-text {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    display: inline;
+    text-align: center;
+    align-items: center;
+}
+/* service section */
      .projects-header h1{
         font-size: 25px !important;
     }
